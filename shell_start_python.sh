@@ -1,0 +1,1 @@
+python3 /home/yyy/Downloads/inception_tensorflow_donload/retrain.py --image_dir /home/yyy/Downloads/cat_dog_data/ --bottleneck_dir /home/yyy/Downloads/inception_tensorflow_donload/bottleneck/ --how_many_training_steps 2000  --model_dir /home/yyy/Downloads/inception_tensorflow_donload/ --output_graph output_graph.pb --output_labels output_labels.txt 
