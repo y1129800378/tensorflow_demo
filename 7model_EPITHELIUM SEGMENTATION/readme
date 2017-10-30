@@ -1,0 +1,14 @@
+case2_step1.m
+case2_step2.m
+主要是裁剪图片，以及交叉验证数据的分配
+
+case2_step3_make_dbs.sh
+利用caffe的工具将数据打包
+
+case2_step4_submit_jobs_levels.py
+训练模型
+
+case2_step5.py
+预测并生成效果图
+
+代码复用时，只需更改地址部分即可。
