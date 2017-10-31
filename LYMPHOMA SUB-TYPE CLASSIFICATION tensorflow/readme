@@ -44,3 +44,7 @@ python3 retrain.py
  --predict_img_path  需预测图像的存放文件夹
 
  --size 图像尺寸
+ 
+ 
+ 
+ http://www.andrewjanowczyk.com/category/deep-learning/
