@@ -1,0 +1,46 @@
+训练模型时使用run_training.sh脚本
+
+该脚本包括切图，训练等功能。
+
+预测时 predicte.sh脚本
+
+参数详解：
+
+训练run_training.sh:
+
+python3 draw_patch.py 
+
+--path 原图地址
+
+--path_save_patch 切图储存地址
+
+--size 切片大小
+
+mkdir /home/yyy/Downloads/lymphoma/bottleneck/（bottleneck图像打包文件储存地址）
+
+mkdir /home/yyy/Downloads/lymphoma/model/（模型存放地址）
+
+python3 retrain.py 
+--image_dir 切图储存地址 （训练集）
+
+--bottleneck_dir （bottleneck图像打包文件储存地址）
+
+--how_many_training_steps 训练步数
+
+--model_dir 下载的预训练模型地址
+
+--output_graph 迁移学习后得到模型存放地址
+
+--output_labels 生成label地址
+
+
+
+预测：predicte.sh
+
+ python3 predicte.py 
+ 
+ --model_save_path 模型地址
+ 
+ --predict_img_path  需预测图像的存放文件夹
+
+ --size 图像尺寸
