@@ -1,0 +1,29 @@
+该脚本用于对图片的自动预测
+
+即：通过两个线程完成：
+
+1.检测是否有新图片导入
+
+2.一旦有新文件导入，及时启动预测程序，对图片进行预测。
+
+使用方法：
+
+命令行输入：python3 thread_cancer_job.py --path (输入所需预测图像所存放的文件夹) --format (图像的格式，建议使用jpg)
+
+中间会生成predicted_images.txt文件，用于记录已经预测过的文件，避免重复计算。
+
+可将python3 thread_cancer_job.py中62行的预测函数改成自己的预测函数。
+
+
+
+脚本启动后：
+
+显示star_do_prediction 加文件名 please wait.....  表示正在预测图片
+
+显示end_do_prediction 表示预测结束
+
+显示 now need prediction pic list is 加文件名   表示正在排队等待被预测的图片名称
+
+显示 now need prediction pic list is [] 表示目前该文件加中所有文件均被执行预测，等待新图片加入。
+
+
