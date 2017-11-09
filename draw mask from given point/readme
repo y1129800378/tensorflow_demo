@@ -1,5 +1,7 @@
 该项目完成以下功能：
 
+from_xml_draw_mask.py
+
 给定一个 坐标点集 生成对应的mask图。
 
 如14-16行为一个示例
@@ -9,7 +11,50 @@ x_position_list是 点集的x坐标，放在一个List中
 y_position_list是 点集的y坐标，放在另一个list中
 
 draw_mask函数：
+
 第一个参数：横坐标List
+
 第二个参数：纵坐标List
-第三、四个参数：图像的尺寸（图像的宽和长）
+
+第三个参数：图像的尺寸（图像的宽）
+
+第四个参数：图像的尺寸（图像的高）
+
 第五个参数：最后生成的mask储存位置
+
+
+
+from_pic_get_xml.py文件 ：
+
+给定mask图片生成对应的xml文件。
+
+第5行，定义生成xml的地址。
+
+第6行，定义从什么位置读取用于生成xml文件的mask图像地址。
+
+
+get_xml_and_draw_newMask.py文件：
+
+先从mask文件生成坐标信息。再通过坐标信息生成新的mask.
+
+第55行 draw_mask_multiRegion函数
+
+第一个参数 region区域的横坐标（比如有三个区域，则list中有三个元素，分别是不同区域的x坐标值）
+
+第二个参数 region区域的横坐标（比如有三个区域，则list中有三个元素，分别是不同区域的y坐标值）
+
+第三个参数 图片宽度
+
+第四个参数 图片高度
+
+第五个参数 生成的mask储存路径
+
+第57行 get_location_file函数
+
+参数 读取需要转成位置叙述坐标的mask图片的路径
+
+第62行 
+
+参数 读取需要转成xml的mask图片的路径
+
+
