@@ -5,3 +5,4 @@ find_FirstPIc.py 从一堆图片里拿出 尾号为000 的图片， 放在另一
 find_trainNum (2).py 先将txt中的 files写入list中。 遍历文件夹中文件，如果在list中  
 就做下一步：  打开该文件（xml)  做字符串判断  并顺便统计   如遇到是 6_vue_3的类别 就存下他的xml和jpg
 
+delect_txt.py 从大文件中删除小文件
