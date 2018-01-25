@@ -1,0 +1,74 @@
+﻿/data2/ddj/mxnet/media_competitor/test 上线
+/data2/ddj/mxnet/fastercnn 训练  
+data2/ddj/mxnet/mobilenet 分类代码
+
+
+登陆顺序：
+1.登陆跳板机  密码yin15849117969	
+2.登陆账号  ssh yyy2@192.168.199.96
+3.cd /     cd /data2/ddj/mxnet/faster_yyy
+
+4.下载 sz 文件名称
+5.上传 rz 文件名称
+ /www/tmp/video/vue_mp4.txt  yyy2@192.168.199.96:/home/yyy2/
+
+faster rcnn测试 /data2/ddj/mxnet/media_competitor/test/ media_test_yyy.py
+
+id转mp4 ssh yyy2@192.168.137.193:/home/ddj/video2mp4.py
+
+
+/data2/ddj/mxnet/faster_yyy_test/model/e2e-vgg-1013
+数据存放地/data2/datasets/video/logo/data
+
+42bba30ea1f3
+
+ssh yyy2@192.168.137.192 放logo数据集
+
+1) 统计当前文件夹下文件的个数
+ls -l |grep "^-"|wc -l
+2) 统计当前文件夹下目录的个数
+ls -l |grep "^d"|wc -l
+3) 统计当前文件夹下文件的个数，包括子文件夹里的 
+ls -lR|grep "^-"|wc -l
+4) 统计文件夹下目录的个数，包括子文件夹里的
+ls -lR|grep "^d"|wc -l
+
+打包文件
+ tar -czf
+解包
+ tar -xzf
+/test_rpn/test.txt
+nohup python -u show.py > xx.log 2>&1 &
+
+
+/data2/datasets/video/logo/data/VOC2007/ImageSets/Main/trainval.txt
+/data2/yyy_model/media_competitor/model/e2e-vgg-1013-meipai
+e2e-vgg-1013-meipai-0011.params
+/data2/yyy_model/model_faster_logo/vgg16_miniscale_050751_369
+
+nohup bash train.sh &>log_miniscale.log &
+tail -f log_miniscale.log 
+
+watch -n 0.5 nvidia-smi
+
+cp -Rf /home/user1/* /root/temp/
+
+
+95254
+print("gt_widths:",gt_widths,"ex_widths:",ex_widths,"targets_dw:",targets_dw)
+
+
+scp -v -P34185 yyy2@192.168.199.96://data2/yyy/faster_yyy_test/checkpoint/model1413.zip /www/
+scp -v -P34185 /www/model1413.zip yyy2@192.168.137.192:/data2/yyy_model/model_faster_logo/  
+
+ll /proc//proc/
+
+sudo du -h --max-depth=1看占用大小
+du -sh .[!.]*  
+
+改变环境变量
+vim ~/.bashrc
+export PYTHONPATH=/data1/incubator-mxnet_011/python:$PYTHONPATH to PTHONPATH
+source ~/.bashrc
+echo $PATH
+mx.__path__
