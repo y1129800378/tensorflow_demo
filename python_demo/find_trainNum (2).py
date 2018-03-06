@@ -6,7 +6,11 @@ def addWord(theIndex,word,pagenumber):
     theIndex.setdefault(word, [ ]).append(pagenumber)
 kind_list=[]
 d={}
-
+# def addword(theIndex, word, pagenumber):  
+#       if word in theIndex:  
+#             theIndex[word].append(pagenumber)  
+#       else:  
+#             theIndex[word] = [pagenumber] 
 train_list=[]
 for lines in open("/data2/datasets/video/logo/data/VOC2007/ImageSets/Main/trainval.txt") :
     if (lines[-2:] == "\n\r") or (lines[-2:] == "\r\n"):
